@@ -273,3 +273,4 @@ TSWLatexianTemp*
 *.lpz
 .vscode/
 Thesis.pdf
+.DS*
