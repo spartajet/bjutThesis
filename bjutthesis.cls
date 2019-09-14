@@ -166,7 +166,7 @@
 \bjut@define@term{UDC}{510}
 \bjut@define@term{universitycode}{10005}
 \bjut@define@term{universityname}{北京工业大学}
-\bjut@define@term{department}{应用数理学院}
+\bjut@define@term{department}{机械工程与应用电子技术学院}
 \bjut@define@term{title}{论文题目}
 %\bjut@define@term{titleEN}{英文论文题目,全大写}
 \bjut@define@term{author}{XXXX}
@@ -183,37 +183,48 @@
 
 \newcommand\makehardcover{%
 \pagestyle{empty}
-\vspace{-0.1cm}\noindent {\bf \zihao{5} 中文图书分类号:~{\bjut@classificationnumber}}
+\vspace{-0.1cm}\noindent {\heiti\bfseries \zihao{5} 中文图书分类号:~{\bjut@classificationnumber}}
 
-\vspace{-0.1cm}\noindent{\bf \zihao{5} 密 \hspace{1.57cm} 级:~\bjut@secret}
+\vspace{-0.1cm}\noindent{\heiti\bfseries \zihao{5} 密 \hspace{1.65cm} 级:~\bjut@secret}
 
-\vspace{-0.1cm}\noindent{\bf \zihao{5}\hspace{1.2cm} ~~{\bf{UDC}:~\bjut@UDC}}
+\vspace{-0.1cm}\noindent{\heiti\bfseries \zihao{5}\hspace{1.5cm} ~~{\bf{UDC}:~\bjut@UDC}}
 
-\vspace{-0.1cm}\noindent{\bf \zihao{5} 学\hspace{0.37cm}校\hspace{0.37cm}代\hspace{0.37cm}码:~\bjut@universitycode}
+\vspace{-0.1cm}\noindent{\heiti\bfseries \zihao{5} 学\hspace{0.37cm}校\hspace{0.37cm}代\hspace{0.37cm}码:~\bjut@universitycode}
 
 
 \vspace{2.0cm}
+\begin{center}
+  \includegraphics[height=26mm,width=110mm]{figure/bjut.png}
+\end{center}
+\vspace{5mm}
+\begin{center}
+  {\heiti\fontsize{42}{5}\textbf{博\hspace{5mm} 士\hspace{5mm} 学\hspace{5mm} 位\hspace{5mm} 论\hspace{5mm} 文}}
+
+  \vspace{5mm}
+
+  {\songti\fontsize{22}{5}\textbf{DOCTORAL DISSERTATION}}
+\end{center}
 
 \vspace{4cm}
-\noindent { \heiti \zihao{3}论~~~~文~~~~题~~~~目: \parbox[t]{8cm}{\bjut@title}}
+\noindent { \heiti \zihao{3}\textbf{论\hspace{7mm}文\hspace{7mm}题\hspace{7mm}目: \parbox[t]{10cm}{\bjut@title}}}
 
 
 \vspace{0.4cm}
-\noindent { \heiti \zihao{3}论~~~~文~~~~作~~~~者:{\zihao{3}\heiti \bjut@author
+\noindent { \heiti \zihao{3}\textbf{论\hspace{7mm}文\hspace{7mm}作\hspace{7mm}者:{\zihao{3}\heiti \bjut@author}
 \hspace{0.2cm}~~\hspace{1cm}~~~ \hspace{0.6cm}}}
 
 \vspace{0.4cm}
-\noindent { \heiti \zihao{3}学\hspace{3.17cm}科:{\zihao{3}\heiti
-\hspace{0.2cm}\bjut@major\hspace{1cm}~~~ \hspace{0.6cm}}}
+\noindent { \heiti \zihao{3}\textbf{学\hspace{3.17cm}科:{\zihao{3}\heiti
+\hspace{0.2cm}\bjut@major\hspace{1cm}~~~ \hspace{0.6cm}}}}
 
 \vspace{0.4cm}
-\noindent { \heiti \zihao{3}指\hspace{0.68cm}导\hspace{0.68cm}教\hspace{0.68cm}师:{\zihao{3}\heiti
-\hspace{0.2cm}\bjut@supervisor \hspace{1cm}~~~ \hspace{0.6cm}}}
+\noindent { \heiti \zihao{3}\textbf{指\hspace{0.68cm}导\hspace{0.68cm}教\hspace{0.68cm}师:{\zihao{3}\heiti
+\hspace{0.2cm}\bjut@supervisor \hspace{1cm}~~~ \hspace{0.6cm}}}}
 
 
 \vspace{0.4cm}
-\noindent { \heiti \zihao{3}论\hskip 1.82mm 文\hskip 1.82mm
-提\hskip 1.82mm 交\hskip 1.82mm 日\hskip 1.82mm 期: \bjut@date }
+\noindent { \heiti \zihao{3}\textbf{论\hskip 1.82mm 文\hskip 1.82mm
+提\hskip 1.82mm 交\hskip 1.82mm 日\hskip 1.82mm 期: \bjut@date }}
 
 }
 
