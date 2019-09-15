@@ -245,12 +245,12 @@
 % \centerline{\kaishu \bf \zihao{1}\quad （全日制）}
 \vspace{2cm}
 
-\begin{table}[]
-\begin{tabular}{lm{11cm}}
-{\songti \bf \zihao{4}{题\hspace{10mm}目}:} & { \bjut@title} \\ \cline{2-2}
-{\songti \bf \zihao{4}{英文题目}:} & { \bjut@titleEN } \cline{2-2}
+
+\begin{tabular}{lp{11cm}}
+\songti \bf \zihao{4}{题\hspace{10mm}目}: & \songti{ \bjut@title} \\ \cline{2-2}
+\songti \bf \zihao{4}{英文题目}: & \songti{ \bjut@titleEN } \\\cline{2-2}
 \end{tabular}
-\end{table}
+
 
 \vspace{2cm}
  \noindent {\fangsong \bf \zihao{4} 论~~~文~~~ 作~~~ 者~: }
@@ -288,6 +288,10 @@
 \thispagestyle{empty}
 
 }
+
+
+\clearpage%添加空白页
+
 \newcommand\makestatement{%
 \vspace{1.6cm}
 
