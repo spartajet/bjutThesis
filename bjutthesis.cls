@@ -226,63 +226,60 @@
 \noindent { \heiti \zihao{3}\textbf{论\hskip 1.82mm 文\hskip 1.82mm
 提\hskip 1.82mm 交\hskip 1.82mm 日\hskip 1.82mm 期: \bjut@date }}
 
+\clearpage
+\phantom{s}
+\thispagestyle{empty}
 }
+
+% \clearpage%添加空白页
 
 \renewcommand\maketitle{%
 \pagestyle{empty}
 \vspace{-2cm}
 
 \begin{tabular}{rp{2cm}p{2cm}rl }
-\zihao{5}UDC~:&\bjut@UDC &&\songti\zihao{5} 学校代码~:&\bjut@universitycode\\
-\songti\zihao{5}中文图书分类号~:&\bjut@classificationnumber &&\songti\zihao{5}学~~~~~~号~:&\bjut@studentID\\
-&&&\songti\zihao{5}密~~~~~~级~:&\bjut@secret\\
+\zihao{5}UDC~：&\bjut@UDC &&\songti\zihao{5} 学校代码~：&\bjut@universitycode\\
+\songti\zihao{5}中文图书分类号~：&\bjut@classificationnumber &&\songti\zihao{5}学~~~~~~号~：&\bjut@studentID\\
+&&&\songti\zihao{5}密~~~~~~级~：&\bjut@secret\\
 
 \end{tabular}
 
 \vspace{2cm}
- \centerline{  \zihao{1}\bfseries\kaishu{北京工业大学工学博士学位论文}}
+ \centerline{ \zihao{1}\bfseries\kaishu{北京工业大学工学博士学位论文}}
 \vspace{2cm}
 % \centerline{\kaishu \bf \zihao{1}\quad （全日制）}
 \vspace{2cm}
 
-
+\noindent{
 \begin{tabular}{lp{11cm}}
 \songti \bf \zihao{4}{题\hspace{10mm}目}: & \songti{ \bjut@title} \\ \cline{2-2}
 \songti \bf \zihao{4}{英文题目}: & \songti{ \bjut@titleEN } \\\cline{2-2}
 \end{tabular}
+}
 
+\vspace{3cm}
+{\fangsong \bf \zihao{4} 论~~~~ 文~~~ 作~~~ 者~: }{\fangsong \zihao{4} ~\bjut@author}
 
-\vspace{2cm}
- \noindent {\fangsong \bf \zihao{4} 论~~~文~~~ 作~~~ 者~: }
- {\fangsong \zihao{4} ~~\bjut@author}
+\vspace{3mm}
+{\fangsong \bf \zihao{4} 学~~~~ 科~~~ 专~~~ 业~: }{\fangsong \zihao{4} ~\bjut@major}
 
-\vspace{0.2cm}
- \noindent {\fangsong \bf \zihao{4} 学~~~科~~~ 专~~~ 业~: }
- {\fangsong \zihao{4} ~\bjut@major}
+\vspace{3mm}
+{\fangsong \bf \zihao{4} 研~~~~ 究~~~ 方~~~ 向~: }{\fangsong \zihao{4} ~\bjut@researchdirection}
 
-\vspace{0.2cm}
- \noindent {\fangsong \bf \zihao{4} 研~~~究~~~ 方~~~ 向~: }
- {\fangsong \zihao{4} ~\bjut@researchdirection}
+\vspace{3mm}
+{\fangsong \bf \zihao{4} 申~~~~ 请~~~ 学~~~ 位~: }{\fangsong \zihao{4} ~工学博士}
 
-\vspace{0.2cm}
- \noindent {\fangsong \bf \zihao{4} 申~~~请~~~ 学~~~ 位~: }
- {\fangsong \zihao{4} ~理学硕士}
+\vspace{3mm}
+{\fangsong \bf \zihao{4} 指~~~~ 导~~~ 老~~~ 师~: }{\fangsong \zihao{4} ~\bjut@supervisor}
 
-\vspace{0.2cm}
- \noindent {\fangsong \bf \zihao{4} 指~~~导~~~ 老~~~ 师~: }
- {\fangsong \zihao{4} ~\bjut@supervisor}
+\vspace{3mm}
+{\fangsong \bf \zihao{4} 所~~~~ 在~~~ 单~~~ 位~: }{\fangsong \zihao{4} ~\bjut@department}
 
-\vspace{0.2cm}
- \noindent {\fangsong \bf \zihao{4} 所~~~在~~~ 单~~~ 位~: }
- {\fangsong \zihao{4} ~\bjut@department}
+\vspace{3mm}
+{\fangsong \bf \zihao{4} 答~~~~ 辩~~~ 日~~~ 期~: }{\fangsong \zihao{4} ~\large{2019 年~5 月}}
 
-\vspace{0.2cm}
- \noindent {\fangsong \bf \zihao{4} 答~~~辩~~~ 日~~~ 期~: }
- {\fangsong \zihao{4} ~~\large{2019 年~5 月}}
-
-\vspace{0.2cm}
- \noindent {\fangsong \bf \zihao{4} 授~予~学~位~单~位~: }
- {\fangsong \zihao{4} ~\bjut@universityname}
+\vspace{3mm}
+{\fangsong \bf \zihao{4} 授~予~学~位~单~位~: }{\fangsong \zihao{4} ~\bjut@universityname}
 \clearpage
 \phantom{s}
 \thispagestyle{empty}
@@ -290,20 +287,16 @@
 }
 
 
-\clearpage%添加空白页
 
 \newcommand\makestatement{%
 \vspace{1.6cm}
 
-\centerline{ \zihao{3} \bf 独\quad 创\quad 性\quad 声\quad 明}
+\centerline{ \zihao{3} \bf \heiti{独\quad 创\quad 性\quad 声\quad 明}}
 \pagestyle{empty}
 \baselineskip=24pt
 
 {\songti
-本人声明所呈交的论文是我个人在导师指导下进行的研究工作及取得的
-研究成果。尽我所知，除了文中特别加以标注和致谢的地方外，论文中不包含其他人已经发表
-或撰写过的研究成果，也不包含为获得北京工业大学或其它教育机构的学位或证书而使用过的材料。
-与我一同工作的同志对本研究所做的任何贡献均已在论文中作了明确的说明并表示了谢意。
+本人声明所呈交的论文是我个人在导师指导下进行的研究工作及取得的研究成果。尽我所知，除了文中特别加以标注和致谢的地方外，论文中不包含其他人已经发表或撰写过的研究成果，也不包含为获得北京工业大学或其它教育机构的学位或证书而使用过的材料。与我一同工作的同志对本研究所做的任何贡献均已在论文中作了明确的说明并表示了谢意。
 
 \vspace{0.5cm}
 
@@ -314,7 +307,7 @@
 \vskip4cm }
 
 \begin{center}
-{ \zihao{3} \bf 关于论文使用授权的说明}
+{\heiti \zihao{3} \bf \heiti{关于论文使用授权的说明}}
 \end{center}
 
 {\songti
@@ -331,6 +324,9 @@
 \vspace{-1.0cm}
 \hspace{0cm}导~师~签~名~:~\underline{\hspace{2.5cm}}\hspace{2.5cm}~~~~~~ 日~~期~:~~~~~~~~~~~~~~~~~~~ 年~~~~~ 月~~~~~ 日\\
 }
+\clearpage
+\phantom{s}
+\thispagestyle{empty}
 }
 
 \RequirePackage[titles]{tocloft}
