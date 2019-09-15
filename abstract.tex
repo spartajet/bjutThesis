@@ -1,32 +1,106 @@
 % !TeX root = ../main.tex
 
 \begin{abstract}
+  齿轮是机械系统中的关键基础零件，其中硬齿面齿轮具有体积小、质量轻、承载能力大、寿命长和传动质量好等特点，被广泛用于汽车、航空航天、高铁和风电等行业。齿轮的主要加工工艺有滚齿、剃齿、插齿、刮齿、磨齿和珩齿等，其中磨齿和珩齿工艺加工齿轮的精度高，表面质量好，适用于硬齿面齿轮加工的最后一道工序。与磨齿相比，珩齿后的齿轮传动噪声低，齿面耐磨损性好，因此更加适合加工硬齿面齿轮。珩齿技术可分为内啮合珩齿和外啮合珩齿，其中内啮合珩齿机结构复杂，完全依赖国外进口，机床价格昂贵；外啮合珩齿机加工齿轮会产生中凹齿形，并且珩磨轮精度保持性差，这些问题限制了珩齿技术在国内应用和推广。  
   
+  本文通过理论创新与技术创新，解决了间齿珩齿加工过程中的啮合原理、间齿珩齿加工工艺的机理、 基于间齿珩齿加工的全齿面拓扑修形方法和齿面加工误差反调修正技术等关键问题， 为间齿珩齿加工工艺在硬齿面齿轮加工中的成功应用提供了支撑。研究表明，间齿珩齿加工工艺可用于硬齿面齿轮的高精度加工，并且可以加工任意形状的齿面拓扑修形。 本文研究了间齿珩齿加工工艺的基础理论和关键技术，主要研究内容如下：
   
-  \href{https://github.com/ustctug/ustcthesis}{中国科学技术大学}
+  (1) 提出了外啮合间齿珩齿加工工艺。该工艺利用了间齿啮合原理的特点，使得珩齿加工过程中只有一对齿面接触，保证了磨削力不存在较大波动，避免了齿面中凹现象的发生。研究了外啮合间齿珩齿加工过程中的啮合原理，分别从二维和三维两个角度阐述了间齿啮合过程的不同阶段， 建立了渐开线啮合段和顶刃啮合段的模型，并给出了不同阶段分解点的计算方法。利用模型计算了齿面接触点迹线和接触点处的相对速度， 绘制了被加工齿轮的转动速度曲线和整体误差单元曲线。对比了二维模型和三维模型绘制的速度曲线和整体误差单元曲线，明确了不存在修形时可以用二维模型代替三维模型计算珩磨轮和被加工齿轮之间的角度关系作为加工控制依据。
+  
+  (2) 研究了间齿珩齿机理中磨削力和磨削烧伤问题。根据珩齿加工过程中的几何特点和运动规律，建立了适用于间齿珩齿加工过程的珩齿近似模型。通过分析珩齿近似模型的特点，建立了以平面磨削力模型为基础的间齿珩齿磨削力模型。根据几何关系和运动规律，计算了模型中的磨削速度、当量直径和磨削深度等参数。以磨削力模型为基础，进一步推导了珩齿过程的磨削功率，按照被加工齿轮温升模型和能量分配模型，计算了磨削区域发生最大温升之后的温度，从而判断是否发生磨削烧伤现象。
 
-
-\href{https://github.com/CTeX-org/gbt7714-bibtex-style}{GB/T 7714-2015标准}
-
-\href{https://github.com/xiaoyaoE/bjutThesis}{最初版本}
-
-
-
-  关键词另起一行并隔写在摘要下方，一般3～8个词，中文关键词间空一字或用分号“；”隔
-  开。英文摘要的关键词与中文摘要的关键词应完全一致，中间用逗号“,”或分号“;”隔开。
-  \keywords{中国科学技术大学；学位论文；\LaTeX{} 模板；学士；硕士；博士}
+  (3) 提出了一种基于外啮合间齿珩齿加工工艺的齿面拓扑修形方法。该方法不同于在刀具上包含修形形状的传统修形加工，而是通过控制运动实现拓扑修形。利用了间齿啮合过程中，珩磨轮和被加工齿轮只存在一个接触点的特点，通过控制珩磨轮和被加工齿轮的运动关系，来控制接触点的空间位置，实现任意拓扑修形的加工。 分析了本文提出的齿面拓扑修形方法与现有的修形方法之间的不同，阐述了该方法的优点。以抛物线修形形状为例，建立了修形齿面模型，分析了修形齿面与珩磨轮之间的角度对应关系。 针对加工中的对刀问题和角度同步问题，进行了分析，给出了有效的解决方法。
+  
+  (4) 提出了可用于外啮合间齿珩齿加工工艺的齿轮加工误差反调修正技术。该技术同样利用了间齿啮合过程中， 珩磨轮和被加工齿轮只存在一个接触点的特点，通过控制珩磨轮和被加工齿轮的转角关系，进行单点精确修正加工。利用齿轮误差多自由度理论对加工后的齿廓偏差进行误差分解， 建立了各个误差项目的误差模型。基于实测数据计算了误差模型中的待定系数，建立了消除误差之后的齿面模型，作为计算加工过程中转角位置的依据。
+  
+  (5) 建立了一套完整的实验方案，对研究内容进行验证。介绍了实验中所使用的加工机床和测量仪器。检测了珩齿前，滚齿粗加工中所使用的滚刀的精度，磨削前的齿轮满足要求。分别按照二维模型和三维模型进行珩齿加工，验证了加工模型的正确性，并分析出可以用二维模型替代三维模型。设计了不同的修形参数，进行多组修形加工实验，验证了拓扑修形方法的可行性以及部分优点。
+  \keywords{齿轮；珩齿；间齿啮合；拓扑修形；误差反调}
 \end{abstract}
 
 \begin{enabstract}
-  This is a sample document of USTC thesis \LaTeX{} template for bachelor,
-  master and doctor. The template is created by zepinglee and seisman, which
-  orignate from the template created by ywg. The template meets the
-  equirements of USTC theiss writing standards.
+  Gears are basic parts in the mechanical systems. Among them, case-hardened
+gears are widely applied in automobile, aerospace, high speed train, wind power and
+so on with its advantages, small size, low weight, high load capacity, long lifetime and
+good transmission precision. The main process to manufacture gears contains gear
+hobbing, gear shaving, gear shaping, gear skiving, gear grinding and gear honing. As
+grinding and honing have better precision and surface quality, they are usually used as
+the last process of gear manufacture. Compared with grinding, honed gears have
+lower transmission noise and better wear resistance. So it is more suitable for the
+processing of case-hardened gears. The gear honing technique includes internal gear
+honing and external gear honing. The internal gear honing machines are complicated
+and expensive, and our country relies on imports for it. The external gear honing
+machines are cheap, but they will produce mid-concaved profils and the honing
+wheels have poor stability of precision. These problems limit the application and
+promotion of gear honing.
 
-  This document will show the usage of basic commands provided by \LaTeX{} and
-  some features provided by the template. For more information, please refer to
-  the template document ustcthesis.pdf.
+Through the theoretical innovation and technological innovation, this paper
+solves the key problems of meshing principle of tooth-skipped gear honing, grinding
+mechanism of tooth-skipped gear honing, topology modification profile peocessing
+based on tooth-skipped gear honing and profile processing error correction technology,
+which provide strong support for the successful application of the tooth-skipped gear
+honing to the manufacture of case-hardened gears. The research shows the
+tooth-skipped gear honing could be used to process case-hardened gears with high
+precision and coud realize the profile topology modification with any shape. This
+paper studies on the basic theories and key techniques of this new gear process
+technology.
 
-  \enkeywords{University of Science and Technology of China (USTC); Thesis;
-  \LaTeX{} Template; Bachelor; Master; PhD}
+The main contents of this dissertation are as follows:
+
+(1) The external tooth-skipped gear honing technology is proposed. This process
+uses the characteristic of the principle, that there is only one pair of teeth in contact, to
+ensure the grinding force doesn’t change a lot during the honing, which avoids the
+mid-concaed profile. The meshing principle of the external tooth-skipped gear honing
+is studied in two aspects, two-dimension and three-dimension. The different meshing
+processes are decribed and the models of involute meshing process and tip meshing
+process are established. The computing method of the demarcation points between
+each process is given. The trail of the contact points and the relative speed at the
+contact point are calculated. The speed curve of the processed gear and the gear
+integrated error unit curve are drawn. These two curves of the 2-D model and 3-D
+model are compared, which shows that the 2-D model could replace the 3-D model to
+deduce the angle relationship between the honing wheel and the processed gear when
+the gear is without modification.
+
+(2) The grinding force and grinding burn of the grinding mechanism are studied.
+Based on the geometry characteristic and motion law, the analog grinding model
+suitable for external tooth-skipped gear honing is built. According to analyze the
+analog grinding model, the model of the grinding force are established based on plane
+grinding model. The grinding speed, equivalent diameter and grinding deep are
+computed. The grinding power is deduced based on the grinding force model.
+Referring to the temperature rise model and energy partition model of the processed
+gear, the temperature of the grinding region after max temperature rise is calculated.
+The temperature could be used to judge whether the grinding burn will appear.
+
+(3) A new kind of topology modification processing method is presented based
+on the external tooth-skipped gear honing. It uses motion control to process
+modification instead of copying the modification on the cutting tool. This method
+makes effective use of the characteristic that there is only one contact point during the
+honing. The topology modification could be completed because the position of this
+contact point could be determined by controlling the motion relationship between the
+honing wheel and the processed gear. The differenc between the new topology
+modification method and existing methods are explained and the advantages of the
+new method are shown. Taking the parabola modification as an example, the
+relationship between the modified profile and the honing wheel are analyzed. For the
+problems of cutting tool adjusting and angle synchronization, this paper gives the
+appropriate solve with deep analysis.
+
+(4) Gear processing error reverse correction technique is put forward based on
+the external tooth-skipped gear honing. Same as the topology modification method,
+this technique also uses the characteristic that there is only one contact point between
+the honing wheel and the processed gear. By controlling the angle relation of them,
+the single point correction processing could be conducted precisely. Using the
+multi-degrees of freedom theory for gear deviation to decompose the profile deviation
+of the processed gear, the models of each error are built. The undetermined
+coefficients in the models are calculated based on the measured data. The model with
+error elimination is given to be the reference to calculate the new angle relationship.
+
+(5) A complete set of experiment scheme is provided to verify the research. The
+machines and instruments used in the experiment are introduced. The hob which is
+used in rough processing before honing is inspected to guarantee the gear before
+honing meets the requirement. The 2-D model and 3-D model are used to honing
+gears to examine validity. It is analyzed that the 2-D model could replace the 3-D
+model. Gears with sevral kinds of modified parameters design are processed. The
+results verify the feasibility of the new topology modification method and some its
+advantages.
+  \enkeywords{gear, gear honing, tooth-skipped meshing, topology modification， error
+  reverse correction}
 \end{enabstract}
