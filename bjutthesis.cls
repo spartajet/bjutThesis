@@ -166,15 +166,20 @@
 \bjut@define@term{UDC}{510}
 \bjut@define@term{universitycode}{10005}
 \bjut@define@term{universityname}{北京工业大学}
+\bjut@define@term{universitynameen}{Beijing University of Technology}
 \bjut@define@term{department}{机械工程与应用电子技术学院}
 \bjut@define@term{title}{}
 \bjut@define@term{titleEN}{}
 \bjut@define@term{author}{XXXX}
+\bjut@define@term{authoren}{XXXX}
 \bjut@define@term{studentID}{XXXX}
 \bjut@define@term{major}{XXXX}
+\bjut@define@term{majoren}{XXXX}
 \bjut@define@term{researchdirection}{XXXX}
 \bjut@define@term{supervisor}{XXX\quad 教授}
+\bjut@define@term{supervisoren}{XXX\quad 教授}
 \bjut@define@term{date}{\zhtoday}
+\bjut@define@term{dateen}{\zhtoday}
 \bjut@define@term{bigtitle}{}
 \bjut@define@term{keywords}{}
 \bjut@define@term{enkeywords}{}
@@ -286,7 +291,41 @@
 
 }
 
+\newcommand\maketitleen{
+  \pagestyle{empty}
+  \begin{center}
+    {\songti\bf\zihao{-3}{Dissertation Submitted to Beijing University of Technology for
+    Doctor Degree of Engineering}}
 
+    \vspace{42mm}
+
+    {\songti\bf\zihao{3}{\bjut@titleEN}}
+
+    \vspace{42mm}
+
+    {\songti\bf\zihao{3}{\bjut@authoren}}
+
+    \vspace{5mm}
+
+    {\songti\bf\zihao{3}{Supervisored by \bjut@supervisoren}}
+
+    \vspace{30mm}
+
+    {\songti\bf\zihao{3}{Major in \bjut@majoren}}
+
+    \vspace{5mm}
+
+    {\songti\bf\zihao{3}{\bjut@universitynameen}}
+
+    \vspace{5mm}
+
+    {\songti\bf\zihao{3}{\bjut@dateen}}
+    
+  \end{center}
+  \clearpage
+  \phantom{s}
+  \thispagestyle{empty}
+}
 
 \newcommand\makestatement{%
 \vspace{1.6cm}
