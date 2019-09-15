@@ -167,8 +167,8 @@
 \bjut@define@term{universitycode}{10005}
 \bjut@define@term{universityname}{北京工业大学}
 \bjut@define@term{department}{机械工程与应用电子技术学院}
-\bjut@define@term{title}{论文题目}
-%\bjut@define@term{titleEN}{英文论文题目,全大写}
+\bjut@define@term{title}{}
+\bjut@define@term{titleEN}{}
 \bjut@define@term{author}{XXXX}
 \bjut@define@term{studentID}{XXXX}
 \bjut@define@term{major}{XXXX}
@@ -232,7 +232,7 @@
 \pagestyle{empty}
 \vspace{-2cm}
 
-\begin{tabular}{rp{2cm}p{6cm}rl }
+\begin{tabular}{rp{2cm}p{2cm}rl }
 \zihao{5}UDC~:&\bjut@UDC &&\songti\zihao{5} 学校代码~:&\bjut@universitycode\\
 \songti\zihao{5}中文图书分类号~:&\bjut@classificationnumber &&\songti\zihao{5}学~~~~~~号~:&\bjut@studentID\\
 &&&\songti\zihao{5}密~~~~~~级~:&\bjut@secret\\
@@ -240,16 +240,17 @@
 \end{tabular}
 
 \vspace{2cm}
- \centerline{  \zihao{1}\bfseries\kaishu{  北京工业大学理学硕士学位论文}}
+ \centerline{  \zihao{1}\bfseries\kaishu{北京工业大学工学博士学位论文}}
 \vspace{2cm}
 % \centerline{\kaishu \bf \zihao{1}\quad （全日制）}
 \vspace{2cm}
 
-\begin{tabular}{lp{11.3cm}}
-{\songti \bf \zihao{4}{题\hspace{1.04cm}目}:}&{\uline{\hfill \bjut@title \hfill}} \\
-{\songti \bf \zihao{4} {英文题目}:}&{\expandafter\ulined\titleEN\hfill}
+\begin{table}[]
+\begin{tabular}{lm{11cm}}
+{\songti \bf \zihao{4}{题\hspace{10mm}目}:} & { \bjut@title} \\ \cline{2-2}
+{\songti \bf \zihao{4}{英文题目}:} & { \bjut@titleEN } \cline{2-2}
 \end{tabular}
-
+\end{table}
 
 \vspace{2cm}
  \noindent {\fangsong \bf \zihao{4} 论~~~文~~~ 作~~~ 者~: }
